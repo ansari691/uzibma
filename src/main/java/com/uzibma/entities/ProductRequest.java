@@ -12,10 +12,40 @@ public class ProductRequest {
 	@Id
 	int requestId;
 	int productId;
+	String type;
+	String subType;
 	String customerName;
 	String customerPhNo;
 	String request;
 	Date requestDate;
+	String customerEmail;
+	String productSize;
+	boolean active;
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
+
+	public String getProductSize() {
+		return productSize;
+	}
+
+	public void setProductSize(String productSize) {
+		this.productSize = productSize;
+	}
+
+	public String getCustomerEmail() {
+		return customerEmail;
+	}
+
+	public void setCustomerEmail(String customerEmail) {
+		this.customerEmail = customerEmail;
+	}
 
 	public int getRequestId() {
 		return requestId;
@@ -27,6 +57,22 @@ public class ProductRequest {
 
 	public int getProductId() {
 		return productId;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getSubType() {
+		return subType;
+	}
+
+	public void setSubType(String subType) {
+		this.subType = subType;
 	}
 
 	public void setProductId(int productId) {

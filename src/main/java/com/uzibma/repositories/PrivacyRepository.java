@@ -3,9 +3,10 @@ package com.uzibma.repositories;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import com.uzibma.entities.ProductRequest;
+import com.uzibma.entities.Privacy;
+
 
 @Repository
-public interface ProductRequestRepository extends MongoRepository<ProductRequest, Integer>{
+public interface PrivacyRepository extends MongoRepository<Privacy, Integer>{
 
 }

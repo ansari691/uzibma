@@ -1,6 +1,8 @@
 package com.uzibma.entities;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -14,12 +16,39 @@ public class Product {
 	String productName;
 	String type;
 	String subType;
-	String productDescrpition;
+	String productDesc;
 	double price;
+	String briefDesc;
+	ArrayList<String> productSize;
+	String additionalInfo;
 	Date productUpdateDate;
 	boolean active;
 	
 	
+	public String getBriefDesc() {
+		return briefDesc;
+	}
+
+	public void setBriefDesc(String birefDesc) {
+		this.briefDesc = birefDesc;
+	}
+
+	public ArrayList<String> getProductSize() {
+		return productSize;
+	}
+
+	public void setProductSize(ArrayList<String> productSize) {
+		this.productSize = productSize;
+	}
+
+	public String getAdditionalInfo() {
+		return additionalInfo;
+	}
+
+	public void setAdditionalInfo(String additonalInfo) {
+		this.additionalInfo = additonalInfo;
+	}
+
 	public String getSubType() {
 		return subType;
 	}
@@ -87,12 +116,12 @@ public class Product {
 		this.productImageNames = productImageNames;
 	}
 
-	public String getProductDescrpition() {
-		return productDescrpition;
+	public String getProductDesc() {
+		return productDesc;
 	}
 
-	public void setProductDescrpition(String productDescrpition) {
-		this.productDescrpition = productDescrpition;
+	public void setProductDesc(String productDescrpition) {
+		this.productDesc = productDescrpition;
 	}
 
 	public double getPrice() {

@@ -14,6 +14,14 @@ public class CustomerFeedback {
 	String customerEmail;
 	String customerContact; 
 	String productType; 
+	String productSubType;
+	
+	public String getProductSubType() {
+		return productSubType;
+	}
+	public void setProductSubType(String productSubCategory) {
+		this.productSubType = productSubCategory;
+	}
 	String feedback;
 	
 	public int getFeedbackId() {
@@ -43,8 +51,8 @@ public class CustomerFeedback {
 	public String getProductType() {
 		return productType;
 	}
-	public void setProductType(String productType) {
-		this.productType = productType;
+	public void setProductType(String productCategory) {
+		this.productType = productCategory;
 	}
 	public String getFeedback() {
 		return feedback;
